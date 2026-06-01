@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npx vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "vercel-build": "vite build"
+    "preview": "npx vite preview",
+    "vercel-build": "npx vite build",
+    "start": "npx vite"
   },
   "dependencies": {
     "framer-motion": "^11.15.0",
