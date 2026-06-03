@@ -10,12 +10,12 @@ function Logo() {
     <Link to="/" className="inline-flex items-center gap-2">
       {/* <div className="h-10 w-10 rounded-2xl bg-[linear-gradient(135deg,rgba(37,99,235,1),rgba(249,115,22,1))] shadow-premium" /> */}
 
-      <img src={image} alt="" className='w-10 h-10 rounded-xl ' />
+      <img src={image} alt="" className='w-12 h-10 rounded-xl ' />
       <div className="leading-none">
         <div className="text-lg font-black tracking-tight">
           SKY<span className="text-sky-500">-</span>ELECT
      </div>
-        <div className="text-[11px] text-[var(--text)]">Electrical • Solar • Installation</div>
+        <div className="text-[11px] text-[var(--text)] text-sky-500">Electrical • Solar • Installation</div>
       </div>
     </Link>
   )
