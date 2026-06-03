@@ -25,6 +25,18 @@ function useCountUp(target, durationMs = 1100) {
   return value
 }
 
+function StatItem({ label, value }) {
+  const v = useCountUp(value)
+  return (
+    <div className="text-left">
+      <motion.div className="text-4xl md:text-5xl font-black text-sky-400" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        {v.toLocaleString()}
+      </motion.div>
+      <div className="mt-2 text-sm md:text-base text-[var(--text)] font-semibold">{label}</div>
+    </div>
+  )
+}
+
 export default function StatsCounter() {
   const stats = [
     { label: 'Products Supplied', value: 1200 },
@@ -36,17 +48,9 @@ export default function StatsCounter() {
   return (
     <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-[18px] p-7 md:p-10">
       <div className="grid gap-6 md:grid-cols-4">
-        {stats.map((s) => {
-          const v = useCountUp(s.value)
-          return (
-            <div key={s.label} className="text-left">
-              <motion.div className="text-4xl md:text-5xl font-black text-sky-400" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                {v.toLocaleString()}
-              </motion.div>
-              <div className="mt-2 text-sm md:text-base text-[var(--text)] font-semibold">{s.label}</div>
-            </div>
-          )
-        })}
+        {stats.map((s) => (
+          <StatItem key={s.label} label={s.label} value={s.value} />
+        ))}
       </div>
       <div className="mt-6 text-sm text-[var(--text)]">
         Premium electrical and solar delivery — quality components, professional installation and reliable support.

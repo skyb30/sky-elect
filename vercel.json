@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm install --prefix @latest && npm run build --prefix @latest",
+  "outputDirectory": "@latest/dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
