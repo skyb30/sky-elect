@@ -5,8 +5,10 @@ import FloatingWhatsApp from '../components/FloatingWhatsApp.jsx'
 import BackToTop from '../components/BackToTop.jsx'
 import LoadingOverlay from '../components/LoadingOverlay.jsx'
 import DarkModeToggle from '../components/DarkModeToggle.jsx'
+import usePageScrollToTop from '../hooks/usePageScrollToTop.js'
 
 export default function AppLayout({ children }) {
+  usePageScrollToTop()
   return (
     <div className="min-h-dvh bg-[var(--bg)] text-[var(--text)]">
       <LoadingOverlay />

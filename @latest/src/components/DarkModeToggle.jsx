@@ -1,13 +1,12 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { motion } from 'framer-motion'
+import useLocalStorage from '../hooks/useLocalStorage.js'
 
 export default function DarkModeToggle() {
-  const [dark, setDark] = useState(false)
-
-  useEffect(() => {
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-    setDark(prefersDark)
-  }, [])
+  const [dark, setDark] = useLocalStorage(
+    'sky-elect-dark-mode',
+    window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  )
 
   useEffect(() => {
     const root = document.documentElement
