@@ -3,15 +3,18 @@ import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Menu, Search, X } from 'lucide-react'
 import Button from './Button.jsx'
+import image from '../assets/skyicon.jpg'
 
 function Logo() {
   return (
     <Link to="/" className="inline-flex items-center gap-2">
-      <div className="h-10 w-10 rounded-2xl bg-[linear-gradient(135deg,rgba(37,99,235,1),rgba(249,115,22,1))] shadow-premium" />
+      {/* <div className="h-10 w-10 rounded-2xl bg-[linear-gradient(135deg,rgba(37,99,235,1),rgba(249,115,22,1))] shadow-premium" /> */}
+
+      <img src={image} alt="" className='w-10 h-10 rounded-xl ' />
       <div className="leading-none">
         <div className="text-lg font-black tracking-tight">
           SKY<span className="text-sky-500">-</span>ELECT
-        </div>
+     </div>
         <div className="text-[11px] text-[var(--text)]">Electrical • Solar • Installation</div>
       </div>
     </Link>
