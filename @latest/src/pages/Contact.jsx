@@ -89,11 +89,11 @@ export default function Contact() {
             <div className="mt-3 space-y-3">
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                 <div className="text-xs text-[var(--text)]">Phone</div>
-                <div className="mt-1 font-bold text-[var(--text-h)]">+234 000 000 0000</div>
+                <div className="mt-1 font-bold text-[var(--text-h)]">+234 8101335958</div>
               </div>
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                 <div className="text-xs text-[var(--text)]">Email</div>
-                <div className="mt-1 font-bold text-[var(--text-h)]">info@sky-elect.com</div>
+                <div className="mt-1 font-bold text-[var(--text-h)]">bestay30@gmail.com</div>
               </div>
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                 <div className="text-xs text-[var(--text)]">Business Hours</div>

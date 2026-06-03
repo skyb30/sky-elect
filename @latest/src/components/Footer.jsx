@@ -15,11 +15,11 @@ export default function Footer() {
             </p>
             <div className="mt-4 flex items-center gap-3 text-sm text-[var(--text)]">
               <Phone size={16} />
-              <a href="tel:+234000000000" className="hover:text-sky-400">+234 000 000 0000</a>
+              <a href="tel:+2348101335958" className="hover:text-sky-400">+234 8101335958</a>
             </div>
             <div className="mt-2 flex items-center gap-3 text-sm text-[var(--text)]">
               <Mail size={16} />
-              <a href="mailto:info@sky-elect.com" className="hover:text-sky-400">info@sky-elect.com</a>
+              <a href="mailto:info@sky-elect.com" className="hover:text-sky-400">bestay30@gmail.com</a>
             </div>
             <div className="mt-2 flex items-center gap-3 text-sm text-[var(--text)]">
               <MapPin size={16} />

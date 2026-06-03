@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { MessageCircle } from 'lucide-react'
 
 export default function FloatingWhatsApp() {
-  const [number] = useState('+234000000000')
+  const [number] = useState('+2348101335958')
 
   useEffect(() => {
     // no-op (reserved for future)

@@ -1,6 +1,7 @@
 export const testimonials = [
   {
     id: 't1',
+    image: "https://i.pinimg.com/1200x/14/e7/ca/14e7cae08470f9f70fbc2eeb9b2d0e0d.jpg",
     name: 'Aisha M.',
     role: 'Homeowner',
     rating: 5,

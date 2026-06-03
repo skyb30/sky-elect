@@ -1,5 +1,5 @@
 const makeWhatsAppLink = (name) => {
-  const number = '+234000000000'
+  const number = '+2348101335958'
   const text = `Hello SKY-ELECT! I want to order: ${name}.`;
   return `https://wa.me/${number.replace(/\D/g, '')}?text=${encodeURIComponent(text)}`
 }

@@ -252,11 +252,11 @@ export default function Home() {
                 </p>
                 <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 p-4 text-left">
                   <div className="text-xs text-[var(--text)]">Phone</div>
-                  <div className="font-bold text-[var(--text-h)]">+234 000 000 0000</div>
+                  <div className="font-bold text-[var(--text-h)]">+234 8101335958</div>
                 </div>
                 <div className="mt-3 rounded-2xl border border-white/10 bg-white/5 p-4 text-left">
                   <div className="text-xs text-[var(--text)]">Email</div>
-                  <div className="font-bold text-[var(--text-h)]">info@sky-elect.com</div>
+                  <div className="font-bold text-[var(--text-h)]">bestay30@gmail.com</div>
                 </div>
               </div>
             </GlassCard>
